@@ -1,2 +1,3 @@
 # illiad-9-templates
-Repository for WSU's Illiad 9.1 webapages
+Repository for WSU's Illiad 9.1 webpages
+The web templates for each campus are in their respective folders.  Also has the un-customized templates alongside for reference...
