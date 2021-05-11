@@ -1,0 +1,256 @@
+/* ILLiad Plus */
+/* ---------------------------------------- */
+
+.ill_requests {
+	border: 1px solid #e5e5e5;
+	border-radius: 3px;
+}
+
+.ill_requests h2 {
+	background: #f1f1f1;
+	border-bottom: 1px solid #ddd;
+	color: #666;
+	font-size: 11px;
+	letter-spacing: 1px;
+	margin: 0;
+	padding: 12px 12px 6px;
+	text-transform: uppercase;
+}
+
+.ill_requests ul {
+	margin: 0;
+	padding: 0;
+}
+
+.ill_requests .ill_empty_notice {
+	padding: 12px;
+	font-weight: bold;
+	color: #999;
+}
+
+.ill_requests .ill_request {
+	border-bottom: 1px solid #ddd;
+	list-style-type: none;
+	margin: 0;
+	min-height: 58px;
+	overflow: hidden;
+	padding: 12px 0 12px 78px;
+	position: relative;
+}
+
+.ill_requests .ill_request:last-child {
+	border: none;
+}
+
+.ill_requests .ill_request:after {
+	background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), #fff);
+	content: "";
+	height: 60px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 20px;
+}
+
+.ill_requests .ill_request.highlight {
+	background: #ffffe5;
+}
+
+.ill_requests .ill_request.highlight:after {
+	background: -webkit-linear-gradient(left, rgba(255, 255, 259, 0), #ffffe5);
+}
+
+.ill_requests .ill_request h3 {
+	line-height: 1;
+	margin: 0 0 3px;
+	white-space: nowrap;
+}
+
+.ill_requests .ill_request b {
+	color: #555;
+	font-style: normal;
+	font-weight: normal;
+	margin-left: 2px;
+}
+
+.ill_requests .ill_request .ill_type {
+	background-image: url(images/other.png);
+	background-position: center 0;
+	background-repeat: no-repeat;
+	bottom: 0;
+	color: #999;
+	font-size: 9px;
+	left: 6px;
+	line-height: 1.2em;
+	padding: 36px 0 0;
+	position: absolute;
+	text-align: center;
+	top: 14px;
+	width: 58px;
+}
+
+.ill_requests .ill_request .ill_type.book,
+.ill_requests .ill_request .ill_type.bookchapter {
+	background-image: url(images/book.png);
+}
+
+.ill_requests .ill_request .ill_type.article,
+.ill_requests .ill_request .ill_type.thesis,
+.ill_requests .ill_request .ill_type.conference  {
+	background-image: url(images/article.png);
+}
+
+.ill_requests .ill_request .ill_type.media {
+	background-image: url(images/cd.png);
+}
+
+.ill_requests .ill_request .ill_type.musicscore {
+	background-image: url(images/sheetmusic.png);
+}
+
+.ill_requests .ill_request .ill_type.newspaper {
+	background-image: url(images/newspaperarticle.png);
+}
+
+.ill_requests .ill_request .ill_type.download {
+	background-image: url(images/download.png);
+}
+
+.ill_requests .ill_request_author,
+.ill_requests .ill_request_journal {
+	color: #777;
+	font-size: 11px;
+	font-style: italic;
+	white-space: nowrap;
+}
+
+.ill_requests .ill_request_options {
+	bottom: 10px;
+	color: #999;
+	font-size: 11px;
+	margin: 10px 0 0;
+	position: absolute;
+}
+
+.ill_requests .ill_request_options a {
+	border-bottom: 1px dotted #999;
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.ill_requests .ill_request_options a:hover {
+	color: #999;
+}
+
+.ill_requests .ill_request_status {
+	border-left: 4px solid #bbb;
+	color: #aaa;
+	display: inline-block;
+	font-weight: bold;
+	padding: 0 0 0 5px;
+	width: 160px;
+}
+
+.ill_requests#checkedout .ill_request_status {
+	border-color: #d8c7a7;
+	color: #b9aa8d;
+}
+
+.ill_requests#available .ill_request_status {
+	border-color: #92bb33;
+	color: #7c9e2c;
+}
+
+.ill_requests .ill_request_date {
+	background: #fff;
+	background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), #fff 20%);
+	color: #999;
+	font-size: 11px;
+	font-style: italic;
+	padding: 0 12px 0 40px;
+	position: absolute;
+	right: 0;
+	text-align: right;
+	top: 11px;
+	z-index: 100;
+}
+
+.ill_requests .ill_request_date b {
+	color: #555;
+	display: block;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	margin: 1px 0 0;
+}
+
+.ill_requests .ill_request_number {
+	bottom: 10px;
+	color: #999;
+	font-size: 10px;
+	position: absolute;
+	right: 12px;
+}
+
+#ill_requests #cancelled {
+	background-color: #f9f9f9;
+}
+
+#ill_requests #cancelled h3 a {
+	color: #888;
+}
+
+#ill_requests #cancelled .ill_request_author {
+	color: #888;
+}
+
+#ill_requests #cancelled .ill_request_author b {
+	color: inherit;
+}
+
+
+/* Filters */
+/* ---------------------------------------- */
+
+#ill_filters {
+	margin: 0;
+}
+
+#ill_filters ul {
+	margin: 0 0 18px;
+}
+
+#ill_filters li {
+	display: inline-block;
+	list-style-type: none;
+	margin: 0 16px 0 0;
+	position: relative;
+}
+
+#ill_filters a {
+	border-radius: 12px;
+	color: #555;
+	display: block;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 3px 10px;
+	text-decoration: none;
+}
+
+#ill_filters a:hover {
+	background: #f1f1f1;
+}
+
+#ill_filters a.selected {
+	background: #ddd;
+	color: #444;
+}
+
+#ill_filters a b {
+	color: #999;
+}
+
+#ill_filters a.selected b {
+	color: #888;
+}

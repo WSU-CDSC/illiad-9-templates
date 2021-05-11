@@ -1,0 +1,517 @@
+/*
+LEGAL
+=====
+Copyright 2020 Atlas Systems, Inc. http://www.atlas-sys.com
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*These are CSS classes for the headers*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #000000;
+}
+
+h1 {
+    font-size: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    padding: 10px 0 8px;
+}
+
+.header-special,
+.header-detailed {
+    margin-top: 1.5rem;
+    font-size: 26px;
+    padding: 15px 0 0;
+}
+
+.page-header {
+    font-size: 26px;
+    padding: 15px 0 0;
+}
+
+.section-header {
+    font-size: 24px;
+    padding: 0 0 10px;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+    height: 110px;
+}
+
+.card-body {
+    padding: 0.75rem 1.25rem;
+}
+
+.card-title {
+    color: #08415c;
+    font-size: 22px;
+    padding: 10px 0 0;
+}
+
+label {
+    font: bold 16px;
+    width: 100%;
+}
+
+p {
+    color: #868e96;
+    font-size: 16px;
+    padding: 10px;
+}
+
+a {
+    color: #08415c;
+    text-decoration: none;
+}
+
+ul {
+    color: #868e96;
+    font-size: 16px;
+    padding: 0 0 0 25px;
+    word-wrap: normal;
+}
+
+.small-notes {
+    color: #868e96;
+    font-size: 14px;
+    padding: 4px 0 0;
+}
+
+.common-note {
+    color: #868e96;
+    font-size: 16px;
+    padding: 6px 0px;
+}
+
+.req {
+    color: #c74827;
+    font-size: 12px;
+    padding: 0 0 0 6px;
+    text-align: right;
+}
+
+.fas {
+    font-size: 16px;
+}
+
+form section {
+    background-color: #e2e3e5;
+    margin-bottom: 40px;
+    padding: 15px;
+}
+
+
+/*These are the CSS classes for the header and footer */
+
+.head {
+    background-color: #fff;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.foot {
+    border-top: 1px solid #0000001a;
+    font-size: 14px;
+    margin-top: 1rem;
+    padding: 1rem 0;
+}
+
+#status br {
+    display: none;
+}
+
+.info-block {
+    border-bottom: 1px solid #0000001a;
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+}
+
+.new-line {
+    display: block;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+
+/* Theses are CSS styling classes for logon/logout pages*/
+
+.logon-directions {
+    border-bottom: 1px solid #0000001a;
+    font-size: 18px;
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+}
+
+.logout-message {
+    font-size: 16px;
+}
+
+.logon-field {
+    padding: 0 15px 0 0;
+}
+
+.forgot-password-link,
+.first-time-link {
+    padding: 10px 0 0;
+}
+
+
+/*These are CSS classes for the buttons*/
+
+.btn-primary,
+.btn-secondary,
+.btn-light {
+    border: none;
+    margin: 10px 0;
+}
+
+.btn-primary {
+    background-color: #981e32;
+    color: #fff;
+    margin: 10px 5px 10px 0;
+}
+
+.btn-primary:disabled {
+    background-color: rgb(170, 170, 170);
+}
+
+.btn-secondary {
+    background-color: #981e32;
+    color: #fff;
+    margin: 10px 5px 10px 0;
+}
+
+.btn-primary:hover {
+    background-color: #52b3d9;
+    color: #05171f;
+    text-decoration: underline;
+}
+
+.btn-secondary:hover,
+.dropdown-item:focus,
+.dropdown-item:not(.disabled):hover {
+    background-color: #a4a5a5;
+    color: #05171f;
+    text-decoration: underline;
+}
+
+.badge-primary {
+    background-color: #08415c;
+}
+
+.selectOptions {
+    color: #08415c;
+    padding: 20px 12px 6px;
+}
+
+
+/*These are CSS alert styling classes*/
+
+.btn-alert {
+    color: #c74827;
+    font-size: 14px;
+    padding: 4px 12px 6px;
+}
+
+.btn-alert:hover {
+    color: #08415c;
+}
+
+.alerts-bar {
+    background-color: #f1f4f7;
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+
+/*These are CSS styling classes for the navigation bar*/
+
+.main-navbar {
+    background-color: #981e32;
+    color: #000;
+    padding: 5px;
+    font: bold 26px 'Open Sans', sans-serif;
+    font-kerning: auto;
+}
+
+nav li {
+    margin: 0px 0px 0px 12px;
+}
+
+nav li a {
+    font: bolder 18px 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #f1f4f7;
+}
+
+.dropdown-item {
+    font-size: 14px;
+}
+
+
+/*These are the CSS Styling classes for search*/
+
+#no-results-message {
+    color: #868e96;
+    font-size: 16px;
+    padding: 4px 0 0;
+}
+
+.ui-datepicker-trigger {
+    width: 35px;
+}
+
+.visit-date {
+    padding-left: 0px;
+}
+
+.researcher-tag-count {
+    padding: 0 5px 0 0;
+}
+
+.checkbox {
+    padding-top: 20px;
+}
+
+.form-checkbox {
+    padding: 10px 16px;
+}
+
+section[name='order-info'] .form-check,
+form[name='ChangeUserInformation'] .form-check {
+    padding-left: 2.25rem;
+}
+
+.transaction-label {
+    width: 33%;
+}
+
+#researcher-tags-input {
+    width: 100%;
+}
+
+a.offscreen {
+    clip-path: inset(100%);
+    clip: rect(1px 1px 1px 1px);
+    /* IE 6/7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    /* added line */
+    width: 1px;
+}
+
+a.offscreen:focus {
+    position: relative;
+    clip: auto;
+    width: auto;
+    height: auto;
+    overflow: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal-footer {
+    padding: 0rem;
+}
+
+
+/* Tooltip container */
+
+.tool-tip {
+    display: inline-block;
+    position: relative;
+}
+
+
+/* Tooltip text */
+
+.tool-tip .tool-tip-text {
+    background-color: #555;
+    border-radius: 6px;
+    color: #fff;
+    font-size: small;
+    padding: 5px 0;
+    text-align: center;
+    visibility: hidden;
+    /* Position the tooltip text */
+    bottom: 125%;
+    left: 0%;
+    position: absolute;
+    z-index: 1;
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+
+/* Tooltip arrow */
+
+.tool-tip .tool-tip-text::after {
+    border-color: #555 transparent transparent transparent;
+    border-style: solid;
+    border-width: 5px;
+    content: '';
+    left: 50%;
+    margin-left: -5px;
+    position: absolute;
+    top: 100%;
+}
+
+
+/* Show the tooltip text when you mouse over the tooltip container */
+
+.tool-tip:hover .tool-tip-text {
+    opacity: 1;
+    visibility: visible;
+}
+
+.form-inline {
+    margin: 20px;
+}
+
+.btn-outline-primary {
+    color: #fff;
+    border-color: #fff;
+    font-size: 26px;
+}
+
+.btn-outline-primary:hover {
+    background-color: #52b3d9;
+    color: #000;
+    border-color: #52b3d9;
+}
+
+#searchType,
+#SearchTypeAll {
+    display: inline !important;
+}
+
+
+/* styles the red Libraries header. Copied from WSU Libraries page */
+
+.main-header {
+    height: 65px;
+    /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
+    background-image: -webkit-gradient(linear, left top, right top, from(#94192b), to(#ff0000));
+    /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+    background-image: -webkit-linear-gradient(left, #94192b #ff0000);
+    /* Firefox 3.6 - 15 */
+    background-image: -moz-linear-gradient(left, #94192b, #ff0000);
+    /* Opera 11.1 - 12 */
+    background-image: -o-linear-gradient(left, #94192b, #ff0000);
+    background: linear-gradient(to right, rgba(148, 25, 43, 1) 0%, rgba(171, 13, 36, 1) 50%, rgba(255, 0, 0, 1) 100%);
+    -webkit-filter: progid: dximagetransform.microsoft.gradient(startColorstr="#94192b", endColorstr="#ff0000", GradientType=1);
+    filter: progid: dximagetransform.microsoft.gradient(startColorstr="#94192b", endColorstr="#ff0000", GradientType=1);
+    background-size: cover;
+    text-shadow: 1px 1px 0 #000;
+    margin-top: 0px;
+}
+
+.sub-header-default {
+    margin-left: 5px;
+    position: relative;
+    top: -3px;
+}
+
+.sup-header-default {
+    display: none !important;
+}
+
+
+/* these earlier stylings in illiad.css were making sidebar's font wrong as well as too big:
+
+    ul {...}
+    nav li a { ... }
+
+    Sidebar should be size 12px font on large screens and 16px font on smaller ones 
+    and Lucida... fonts instead of Roboto.
+
+    This style enforces this rule
+*/
+
+@media screen and (min-width:792px) {
+    .spine-actions ul {
+        font-size: 12px;
+    }
+    .spine-navigation nav a,
+    .spine-global-links li a {
+        font-family: "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        text-decoration: none;
+    }
+}
+
+/* gray header styles */
+
+#gray-header {
+    width: 100%;
+    height: 50px;
+    color: #FFF;
+    background-color: #434b50;
+    margin: 0px auto;
+    padding-left: 2.75em;
+    padding-right: 2.75em;
+    display: flex;
+    justify-content: space-between;
+    align-items: last baseline;
+}
+
+#wsu-library-name {
+    font-size: 24px;
+    line-height: normal;
+    font-weight: 500;
+}
+
+#gray-header a {
+    color: #FFF;
+}
+
+ul.wsu-nav {
+    list-style: disc outside none;
+    padding: 0;
+}
+
+ul.wsu-nav li {
+    padding-right: 1.6em;
+    float: left;
+    list-style-type: none;
+    line-height: normal;
+}
