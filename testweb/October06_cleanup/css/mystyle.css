@@ -1,0 +1,109 @@
+table {
+	width:700px;
+	padding:5px;
+}
+td {
+	text-align:right;
+	width:700px;
+}
+
+#main h1 {
+	color:#99033;
+}
+#utility h3 {
+	color:#99033;
+	font-size:150%
+	font-family:georgia;
+}
+#utility {
+	color:black;
+	font-size:120%;
+	background:#D3D3D3;
+}
+#siteID {
+	height:85px;
+	float:left;
+	width:775px;
+	color:#fff;
+	background:#99033 url('images/sid_4n.jpg') no-repeat;
+}
+#note {
+	color:#99033;
+	margin-bottom:10px;
+	margin-top:10px;
+	margin-right:0px;
+}
+#siteID h2 a {
+	color:#e7e4e2;
+	text-decoration:none;
+}
+#siteID h1  {
+	color:#e7e4e2;
+	text-decoration:none;
+}
+#main {
+    width:100%;
+
+}
+#siteID {
+	background-image:url('images/sid_4n.jpg');
+	background-repeat:no-repeat;
+	height:85px;
+	border:none;
+}
+#search label, #predefined label{
+	display:block;
+	font-weight:bold;
+}
+#content h2 {
+	margin-top:0px;
+	font-size:1.5em;
+	font-weight:bold;
+}
+
+#content h1 {
+	margin-top:0px;
+	margin-bottom:5px;
+}
+
+input, select {
+	border:1px solid #777;
+	margin-bottom:10px;
+	margin-top:10px;
+	margin-right:-5px;
+	}
+
+label {
+	font-weight:none;
+}
+
+.col1 {
+	text-align:right;
+	padding-right:7px;
+}
+
+.col4 {
+	padding-left:20px;
+	font-weight:bold;
+}
+
+#main {
+	padding-bottom:10px;
+
+}
+.img_right {
+	float:right;
+	margin:0 0 10px 10px;
+}
+
+.img_left {
+	float:left;
+	margin:0 10px 10px 0;
+}
+ 
+
+#wrapper #content #localfooter {clear:both;background-image:none;text-align:center;padding-top:65px;padding-left:0px;padding-right:10px;display:block;font-size:x-small;line-height:1.4em;}
+#wsufooter {clear:both;width:986px;position:relative;text-align:center;height:50px;font-size:x-small;margin-left:auto;margin-right:auto;padding:15px 0px 0px 0px;}
+#wsufooter {background:url(http://content.wsulibs.wsu.edu/images/bg-wsufooter_local2.png) no-repeat right top;padding-top:40px;width:986px;}
+#wsufooter a {color:#868f95;text-decoration:none;}
+#wrapper #content{background:url(http://content.wsulibs.wsu.edu/images/bg-content_local2.gif) repeat-y right top;}

@@ -1,0 +1,143 @@
+<html>
+<head>
+<title>ILLiad Reports - Borrowing</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+<!--[if lte IE 6]>
+<link rel="stylesheet" type="text/css" href="css/ie6_or_less.css" />
+<![endif]-->
+</head>
+<body id="type-b">
+<div id="wrap">
+	<div id="header"> 
+  		<span id="site-name">ILLiad Reports</span>
+  	</div>
+	
+  	<div id="content-wrap">
+		<div id="utility">
+			<ul id="nav-secondary">
+				<li class="active"><a href="ILLiadReports.dll?Action=10&Form=10">Main Menu</a></li>
+				<li class="active"><a href="BorrowingReports.html">Borrowing Reports</a>
+					<ul>
+						<li class="first"><a href="ILLiadReports.dll?Action=10&Form=104">Fill Rate Statistics</a></li>
+						<li><a href="ILLiadReports.dll?Action=10&Form=100">Most Requested Journals</a></li>
+						<li><a href="ILLiadReports.dll?Action=10&Form=132">Most Requested Loans</a></li>
+						<li><a href="ILLiadReports.dll?Action=10&Form=108">Registered Users by Department</a></li>
+						<li><a href="ILLiadReports.dll?Action=10&Form=128">Requests Received by Day</a></li>
+						<li><a href="ILLiadReports.dll?Action=10&Form=110">Requests Sent by Day</a></li>
+						<li><a href="ILLiadReports.dll?Action=10&Form=112">Requests by Department</a></li>
+						<li><a href="ILLiadReports.dll?Action=10&Form=114">Requests by Department and User Status</a></li>
+						<li><a href="ILLiadReports.dll?Action=10&Form=102">Requests Finished and Cancelled</a></li>
+						<li><a href="ILLiadReports.dll?Action=10&Form=116">Turnaround Time</a></li>
+						<li><a href="ILLiadReports.dll?Action=10&Form=120">Electronic Delivery Turnaround Time</a></li>
+						<li><a href="ILLiadReports.dll?Action=10&Form=118">Delivery Time Distribution</a></li>
+						<li><a href="ILLiadReports.dll?Action=10&Form=124">Who We Borrow From</a></li>
+						<li class="last"><a href="ILLiadReports.dll?Action=10&Form=130">Journals Received</a></li>
+					</ul>
+				</li>
+				
+				<li class="active"><a href="LendingReports.html">Lending Reports</a>
+					<ul>
+						<li class="first"><a href="ILLiadReports.dll?Action=10&Form=152">Fill Rate Statistics</a></li>
+						<li><a href="ILLiadReports.dll?Action=10&Form=140">Who We Lend To</a></li>
+						<li><a href="ILLiadReports.dll?Action=10&Form=142">Requests Received by Day</a></li>
+						<li><a href="ILLiadReports.dll?Action=10&Form=144">Requests Received by System ID</a></li>
+						<li><a href="ILLiadReports.dll?Action=10&Form=146">Requests Filled by Day</a></li>
+						<li><a href="ILLiadReports.dll?Action=10&Form=148">Requests Filled and Unfilled</a></li>
+						<li><a href="ILLiadReports.dll?Action=10&Form=150">Most Loaned Journals</a></li>
+						<li><a href="ILLiadReports.dll?Action=10&Form=156">Turnaround Time</a></li>
+						<li class="last"><a href="ILLiadReports.dll?Action=10&Form=158">IFM Charges</a></li>
+					</ul>
+				</li>
+				
+				<li class="active"><a href="DocDelReports.html">Document Delivery Reports</a>
+					<ul>
+						<li class="first"><a href="ILLiadReports.dll?Action=10&Form=202">Most Filled Journals</a></li>
+						<li><a href="ILLiadReports.dll?Action=10&Form=206">Requests Received by Day</a></li>
+						<li><a href="ILLiadReports.dll?Action=10&Form=208">Requests Filled by Day</a></li>
+						<li><a href="ILLiadReports.dll?Action=10&Form=210">Turnaround Time</a></li>
+						<li><a href="ILLiadReports.dll?Action=10&Form=212">Elec Del Turnaround Time</a></li>
+						<li class="last"><a href="ILLiadReports.dll?Action=10&Form=204">Requests by Department and User Status</a></li>
+					</ul>
+				</li>
+				
+				<li class="active"><a href="AdminReports.html">Administrative Reports</a>
+					<ul>
+						<li class="first"><a href="ILLiadReports.dll?Action=10&Form=240">Copyright</a></li>
+						<li><a href="ILLiadReports.dll?Action=10&Form=242">Borrowing Invoices Received</a></li>
+						<li><a href="ILLiadReports.dll?Action=10&Form=244">Lending Library</a></li>
+						<li><a href="ILLiadReports.dll?Action=10&Form=246">Customers Cleared</a></li>
+						<li><a href="ILLiadReports.dll?Action=10&Form=248">Outstanding Requests</a></li>
+						<li class="last"><a href="ILLiadReports.dll?Action=10&Form=250">Requests by Username</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		
+    	<div id="content">    	
+			<h2>Borrowing Reports</h2>
+			<h3>Fill Rate Statistics</h3>
+			This report lists all items received within the selected date range and their current status. Depending on the date range, items may still be in process until they are cancelled or completed.<br />
+				
+			<h3>Most Requested Journals</h3>
+			This report lists the distinct journal title (in addition to the OCLC number or ISSN) and the number of requests that were submitted 
+			within the selected date range and are currently at a status of either Delivered to Web or Request Finished. This report only shows journals that are successfully filled.<br />
+				
+			<h3>Most Requested Loans</h3>
+			This report lists the distinct loan title and the number of requests that were submitted withing the selected date range and are currently 
+			at a transaction status of either Checked Out to Customer or Request Finished. So this report only shows monographs that are successfully filled.<br />
+				
+			<h3>Registered Users by Department</h3>
+			This report lists each department and the number of users at each status registered. 
+			This report can either include or exclude disavowed customers. If a user has a a blank department or status, that user will not be included in the report.<br />
+				
+			<h3>Requests Received by Day</h3>
+			This report shows the number of requests received each day of the given time period. 
+			There is an option to choose requests that are submitted and then resubmitted again as a single request or two separate requests.<br />
+				
+			<h3>Requests Sent by Day</h3>
+			This report shows the number of requests processed and sent for fulfillment each day of the given time period. 
+			The date range is based off of the date that the request is sent. There is an option to count requests that are sent out multiple times as one request or separate requests.<br />
+				
+			<h3>Requests by Department</h3>
+			This report shows a list of departments and the number of articles and loans that have been requested by customers within the given time period, 
+			regardless of their current status (cancelled or filled). Requests for users with blank departments are excluded from the list.<br />
+
+			<h3>Requests by Department and User Status</h3>
+			This report shows a list of departments and the number of requests received by each user status within the given time period, 
+			regardless of their current status (cancelled or filled). Requests for users with blank departments are excluded from the list.<br />
+				
+			<h3>Requests Finished and Cancelled</h3>
+			This report shows the number of requests finished or cancelled within the given time period. 
+			The date range is based off of the date the request was finished or cancelled, not when it was submitted. 
+			Those requests cancelled are then broken down by their reason for cancellation. 
+			The finished requests include any item that has gone to Delivered to Web, Customer Not Notified, Customer Notified by Phone or Email, Checked Out to Customer or Request Finished. 
+			The cancelled requests include any items at either a status of Cancelled by ILL Staff or Cancelled by Customer. 
+			All the dates for this report are based off of the current TransactionDate and not from any entries in the Tracking table. The report can show articles, loans or both request types.<br />
+				
+			<h3>Turnaround Time</h3>
+			This report shows the average time difference for articles, loans, both request types and any manually processed articles. 
+			The date range selected is based off of date and time the request reached its final status (Delivered to Web, Request Finished, Checked Out to Customer, etc.) 
+			and not the date it was submitted (which may be before that date range selection).<br />
+				
+			<h3>Electronic Delivery Turnaround Time</h3>
+			This report is very similar to the Turnaround Time report except that it only shows those articles that were delivered electronically. 
+			The date range selected is based off of date and time the request reached Delivered to Web and not the date it was submitted (which may be before that date range selection).<br />
+				
+			<h3>Delivery Time Distribution</h3>
+			This report shows the number of requests filled X days after being submitted by a customer for any given month and year. 
+			The report only shows transactions that are filled within 31 days of the date submitted and the date submitted is within the month and year parameter chosen.<br />
+				
+			<h3>Who We Borrow From</h3>
+			This report lists the library symbol and name of institutions who have filled more than X number of requests (where you can choose the value of X). 
+			The date range selected notes the date that the request was submitted and not necessarily the date range where the request was filled. 
+			Items are counted as filled if they have a current transaction status of Request Finished, Checked Out to Customer, Delivered to Web, or Customer Notified.<br />
+				
+			<h3>Journals Received</h3>
+			This report lists journal titles and years where more than X number of that title and year have been filled (where you can choose the value of X). 
+			The date range selected notes the date that the request was submitted and not necessarily the date range where the request was filled.<br />
+		</div>
+	</div>
+</div>
+</body>
+</html>

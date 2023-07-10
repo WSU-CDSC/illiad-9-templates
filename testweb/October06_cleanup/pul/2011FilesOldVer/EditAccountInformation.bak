@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="FORMATTER" content="Microsoft FrontPage 2.0">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<title>Edit Account Information</title>
+<link rel="StyleSheet" href="PulStyle.css" type="text/css">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" link="#800000" vlink="#800000" background="http://www.wsulibs.wsu.edu/images/bevelback.gif">
+
+<!--INCLUDE HEADER FILE HERE--------Do Not Edit ---------------------->
+<script language="JavaScript" src="http://www.wsulibs.wsu.edu/Header/Header.js"><!--
+// end JavaScript. -->
+</script>
+<!--END INCLUDED HEADER FILE------------------------------------------>
+
+<form action="illiad.dll" method="POST">
+  <input type="hidden" name="SessionID" value="CGIFN=^VARSessionID^">
+  <input type="hidden" name="ILLiadForm" value="EditAccountForm">
+  <input type="hidden" name="Username" value="CGIFN=^VARUsername^">
+  <input type="hidden" name="LogonPath" value="D:\website\wwwroot\illiad\PUL\">
+  <input type="hidden" name="NVTGC" value="PUL">
+
+<table border="0" width="100%">
+  <tr>
+    <td width="75%" bgcolor="#000099"><font color="#FFFFFF" size="5"><img src="images/user.gif" width="32" height="32">Edit Payment Method Information for CGIFN=^VARFirstName^</font></td>
+    <td align="center" width="25%" bgcolor="#000099"><font color="#FFFFFF"><img src="images/MainMenu.gif" width="32" height="32"><input type="submit" name="SubmitButton" value="Exit to Main Menu"></font></td>
+  </tr>
+</table>
+
+<table border="0" width="100%">
+  <tr>
+    <td valign="top" width="10%" bgcolor="#C0C0C0"><strong>Status</strong></td>
+    <td width="90%" bgcolor="#C0C0C0"><em class="status">CGIFN=^StatusLine^</em></td>
+  </tr>
+</table>
+ 
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Click <a href="#" onClick="window.open('http://www.wsulibs.wsu.edu/general/ILLfees.htm','InterlibraryLoanServices','top=10,left=175,screenx=175,screeny=10,HEIGHT=500,WIDTH=800,toolbar=yes,menubar=yes,scrollbars=yes,status=yes,resizable=no,location=no,directories=no')">here</a> for information about fees & payment methods.</p>
+
+<table border="0" width="100%" cellpadding="6">
+  <tr>
+    <td colspan="2" bgcolor="#008000"><font color="#FFFFFF" size="4"><b>&nbsp;&nbsp;&nbsp;&nbsp;Choose a Payment Method then click the Add Payment Method button</b></font></td>
+  </tr>
+
+  <tr>
+    <td valign="top" align="right" width="35%"><strong>Step 1 - Select a Payment Method:</strong></td>
+    <td><select name="Description" size="1">
+        <option selected>CGIFN=^VarDescription</option>
+        <option>GPSA Program (Graduate & Professional Students)</option>
+        <option>IRI (Interdepartmental Requisition & Invoice)</option>
+        <option>Distance Degree Program account</option>
+        <option>Cash</option>
+        <option>Libraries (Library Personnel Only)</option>
+        </select></td>
+  </tr>
+  
+  <tr>
+    <td align="right"><strong>Step 1a - IRI Budget & Project:</strong></td>
+    <td><input type="text" size="20" name="AccountNo">&nbsp;&nbsp;Please use format: <code>nnnn-nnnn</code></td>
+  </tr>
+
+  <tr>
+    <td colspan="2"><p class="attn">Step 2 - Click this button to add the selected payment method</p></td>
+  </tr>
+
+  <tr>
+    <td colspan="2" align="center"><p><input type="submit" name="SubmitButton" value="Add Payment Method"></p></td>
+  </tr>
+
+  <tr>
+    <td colspan="2" align="center"><p class="attn">Step 3 - Click "Exit to Main Menu" button when finished</td>
+  </tr>        
+</table>
+
+<table border="0" cellpadding="6" width="100%">
+  <tr>
+    <td colspan="3" bgcolor="#008000"><font color="#FFFFFF" size="4"><b>&nbsp;&nbsp;&nbsp;&nbsp;Current Payment Method(s) for your account</b></font></td>
+  </tr>
+</table>
+
+<div align="center"><p class="msg">A Payment Method must appear below for requests to be processed.</p>
+CGIFN=^VARShowCurrentAccounts^
+</div>
+
+</form>
+
+<p>&nbsp;</p>
+
+<!--INCLUDE FOOTER FILE HERE--------Do Not Edit ---------------------->
+<script language="JavaScript" src="http://www.dissertations.wsu.edu/illiad/pul/Footer.js"><!--
+// end JavaScript. -->
+</script>
+<!--END INCLUDE FILE-------------------------------------------------->
+
+</body>
+</html>

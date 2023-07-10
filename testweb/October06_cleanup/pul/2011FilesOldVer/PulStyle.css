@@ -1,0 +1,60 @@
+body {
+font-family: Arial, Helvetica, sans-serif;
+}
+
+A:link, A:visited, A:active { text-decoration: none;
+font-weight: bold;
+color: #990033;
+}
+
+a:hover {
+text-decoration: underline;
+font-weight: bold;
+color: #990033;
+}
+
+em.status {
+color: #990033;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+}
+
+p.attn {
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+color: #990033;
+text-align: center;
+}
+
+p.notice {
+color: #000099;
+font-family: Arial, Helvetica, sans-serif;
+
+font-weight: bold;
+background-color: #f0e8d9;
+border: solid;
+padding-left: .5em;
+padding-top: .5em;
+padding-bottom: .5em;
+padding-right: .5em;
+margin-right: 20px;
+}
+
+BLOCKQUOTE, P, DL, TD, UL, H1, H2, H3, H4, H5, H6 {
+font-family: Arial, Helvetica, sans-serif;
+}
+
+p.msg {
+color: green;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;}
+
+
+.center {
+text-align: center;
+}
+
+p.alert {
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+}

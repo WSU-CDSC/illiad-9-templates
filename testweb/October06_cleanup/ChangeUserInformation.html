@@ -1,0 +1,433 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--(cje) LEAVE ALONE-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<head>
+<link rel="shortcut icon" href="http://images.wsu.edu/favicon.ico" />
+<!-- replace the key below - replace the key below - replace the key below-->
+<link href="https://designer.wsu.edu/template/css2.aspx?key=0fa2b84n010" type="text/css" rel="stylesheet" />
+
+
+<title>ILLiad Change Personal Information</title>
+
+
+<style type="text/css">
+
+table {
+	width:600px;
+	padding:5px;
+}
+
+#main {
+    width:900px;
+	
+}
+
+#utility {
+	background:#D3D3D3;
+	color:black;
+	font-size:120%;
+}
+#utility h3 {
+	font-size:150%;
+	font-family:georgia;
+}
+
+#wsufooter {clear:both;position:relative;text-align:center;height:10px;font-size:x-small;margin-left:auto;margin-right:auto;padding:0px 0px 0px 0px;}
+#wsufooter {background:url(http://content.wsulibs.wsu.edu/images/bg-wsufooter_local2.png) no-repeat right top;padding-top:25px;padding-right:10px;padding-left:195px;}
+</style>
+</head>
+
+<body>
+
+<!--Beginning of the WSU Identifier Zone. Refer to http://identity.wsu.edu/ for more information. -->
+<div id = "wrapper">
+<noscript>
+<div id='globalnav'><ul><li>Washington State University</li></ul></div>
+<div id='logo'><a href='http://www.wsu.edu'><img src='http://images.wsu.edu/global/bg-logo.jpg' alt="WSU Logo"/></a></div>
+</noscript>
+
+<script language="Javascript" src="https://images.wsu.edu/javascripts/wsuidentifierV2.js" type="text/javascript"></script>
+
+<script language="javascript" type="text/javascript"> var strHeader; strHeader = getHeader(); document.write(strHeader);</script>
+<!--End of the WSU Identifier Zone. -->
+
+
+	<div id="siteID">
+	<h2><a href="http://www.wsulibs.wsu.edu/">WSU Libraries</a></h2>
+  	<h1>ILLiad - Pullman Campus</h1>
+	</div>
+	<div id="toolbar">
+		<script type="text/javascript" src="toolbar.js"></script>
+	</div>
+
+<div id="content">
+
+	<div id="main">
+
+
+        <#INCLUDE filename="include_menu.html">
+		<b><h1>Change Personal Information <#USER field="FirstName" /> <#USER field="LastName" /></h1></b>
+		<#ALERTS><br />
+		
+<!-- +++++++ >>> start content here +++++++ //-->
+<!-- +++++++ >>> start content here +++++++ //-->
+
+	<form action="<#DLL>" method="post" name="ChangeUserInformation" class="f-wrap-request">
+			<input type="hidden" name="ILLiadForm" value="ChangeUserInformation">
+			<input type="hidden" name"SessionID" value="<#PARAM name="SessionID">">
+			<!--input type="hidden" name="NVTGC" value="PUL" /-->
+				<div class="req"><b>*</b> Indicates required field</div>
+				<fieldset>			
+					<#STATUS><br />					
+					<table border="0"><!--div class="default-table"-->
+                <tr><td>
+				<label for="FirstName">
+						<span class="field">
+							<span class="req">*</span>
+							<span class="<#ERROR name="ERRORFirstName">"><b>First Name</b></span>
+						</span></td><td>
+						<input id="FirstName" name="FirstName" type="text" size="40" class="f-name" tabindex="2" value="<#PARAM name="FirstName">"><br />	
+					</label></td></tr>	
+						
+					<tr><td><label for="LastName">
+						<span class="field">
+							<span class="req">*</span>
+							<span class="<#ERROR name="ERRORLastName">"><b>Last Name</b></span>
+						</span></td><td>
+						<input id="LastName" name="LastName" type="text" size="40" class="f-name" tabindex="2" value="<#PARAM name="LastName">"><br />						
+					</label></td></tr>
+					
+									
+					<tr><td><label for="NotifyGroup">
+						<span class="field">
+							<span class="<#ERROR name="ERRORNotifyGroup">"><b>Preferred Notification Method</b></span>
+						</span></td><td>
+						<select id="NotifyGroup" name="NotifyGroup" size="1" class="f-name" tabindex="4">
+							<option selected><#PARAM name="NotifyGroup"></option>
+							<option>Phone</option>
+							<option>E-Mail</option>
+						</select><br />
+					</label></td></tr>
+					
+					<tr><td><label for="EMailAddress">
+						<span class="field">
+							<span class="req">*</span>
+							<span class="<#ERROR name="ERROREMailAddress">"><b>E-Mail Address</b></span>
+						<span class="note"><p> <font color="#000099"><b><font size="+2">*</font></font></b>Enter ONLY ONE (1) email address in the usual *******@*******.*** format. Double-check your entry carefully.<br></span></td><td>
+						<input id="EMailAddress" name="EMailAddress" type="text" size="40" class="f-name" tabindex="3" value="<#PARAM name="EMailAddress">"><br /></span>
+											
+					</label></td></tr>
+					
+					<tr><td><label for="Phone">
+						<span class="field">
+							<span class="req">*</span>
+							<span class="<#ERROR name="ERRORPhone">"><b>Daytime Phone</b></span>
+						</span></td><td>
+						<input id="Phone" name="Phone" type="text" size="40" class="f-name" tabindex="3" value="<#PARAM name="Phone">"><br />						
+					</label></td></tr>
+					
+					<tr><td><label for="DeliveryGroup">
+						<span class="field">
+							<span class="<#ERROR name="ERRORDeliveryGroup">"><b>Preferred Article Delivery Method</b></span>
+						</span></td><td>
+						<select id="DeliveryGroup" name="DeliveryGroup" size="1" class="f-name" tabindex="4">
+							<option selected><#PARAM name="DeliveryGroup"></option>
+							<option>*Electronic Delivery*</option>
+							<option>FACULTY/STAFF Office Delivery</option>
+                			<option>GRAD STUDENT Office Delivery</option>
+							<option>Hold for Pickup</option>
+                			<option>Mail to Address</option>
+						</select><br />
+						 <p>*Electronic Delivery* is preferred method when possible. <!--Added by Cindy Ellis<br-->
+					</label></td></tr>
+
+					<tr><td><label for="LoanDeliveryGroup">
+						<span class="field">
+							<span class="<#ERROR name="ERRORLoanDeliveryGroup">"><b>Preferred Loan Delivery Method</b></span><span class="note"><p> <font color="#000099"><b><font size="+2">*</font></font></b>'Mail to Address' delivery is ONLY available to WSU Pullman Affiliates AWAY FROM CAMPUS (Including DDP students and Research & Extension Station personnel). You must provide a STREET ADDRESS (we can NOT deliver to a PO Box).<br>
+						</span></td><td>
+						<select id="DeliveryGroup" name="LoanDeliveryGroup" size="1" class="f-name" tabindex="4">
+							<option selected><#PARAM name="LoanDeliveryGroup"></option>
+							<option>Hold for Pickup</option>
+							<option>FACULTY/STAFF Office Delivery</option>
+                			<option>GRAD STUDENT Office Delivery</option>						
+							<option>Mail to Address</option>
+						</select><br /></td></tr>
+						
+					</label>
+					
+					<tr><td><label for="WebDeliveryGroup">
+						<span class="field">
+							<span class="<#ERROR name="ERRORWebDeliveryGroup">"><b>Preferred Electronic Delivery if Possible (PDF file via web)?</b></span>
+						</span></td><td>
+						<select id="WebDeliveryGroup" name="WebDeliveryGroup" size="1" class="f-name" tabindex="4">
+							<option selected><#PARAM name="WebDeliveryGroup"></option>
+							<option>Yes</option>
+                			<option>No</option>
+						</select><br />
+					</label></td></tr>
+					
+					<tr><td><label for="Address">
+						<span class="field">
+							<span class="req">*</span>
+							<span class="<#ERROR name="ERRORAddress">"><b>Primary Address Line 1</b></span>
+						</span></td><td>
+						<input id="Address" name="Address" type="text" size="40" class="f-name" tabindex="3" value="<#PARAM name="Address">"><br />						
+					</label></td></tr>
+					
+					<tr><td><label for="Address2">
+						<span class="field">
+							<span class="<#ERROR name="ERRORAddress2">"><b>Primary Address Line 2</b></span>
+						</span></td><td>
+						<input id="Address2" name="Address2" type="text" size="40" class="f-name" tabindex="3" value="<#PARAM name="Address2">"><br />
+					</label></td></tr>
+					
+					<tr><td><label for="City">
+						<span class="field">
+							<span class="req">*</span>							
+							<span class="<#ERROR name="ERRORCity">"><b>Primary Address City</b></span>
+						</span></td><td>
+						<input id="City" name="City" type="text" size="40" class="f-name" tabindex="3" value="<#PARAM name="City">"><br />
+					</label></td></tr>
+					
+					<tr><td><label for="State">
+						<span class="field">
+							<span class="req">*</span>
+							<span class="<#ERROR name="ERRORState">"><b>Primary Address State</b></span>
+						</span></td><td>
+						<input id="State" name="State" type="text" size="40" class="f-name" tabindex="3" value="<#PARAM name="State">"><br />
+					</label></td></tr>
+					
+					<tr><td><label for="Zip">
+						<span class="field">
+							<span class="req">*</span>						
+							<span class="<#ERROR name="ERRORZip">"><b>Primary Address Zip</b></span>
+						</span></td><td>
+						<input id="Zip" name="Zip" type="text" size="40" class="f-name" tabindex="3" value="<#PARAM name="Zip">"><br />
+					</label></td></tr>
+					
+					<tr><td><label for="Primary Country">
+						<span class="field">
+							<span class="<#ERROR name="ERRORZip">"><b>Country</b></span>
+						</span></td><td>
+						<input id="Country" name="Country" type="text" size="40" class="f-name" tabindex="3" value="<#PARAM name="Primary Country">"><br />
+					</label></td></tr>
+					
+					<tr><td><label for="StatusGroup">
+						<span class="field">
+						<span class="req">*</span>
+							<span class="<#ERROR name="ERRORStatus">"><b>Status</b></span>
+						</span></td><td>
+						<select id="StatusGroup" name="StatusGroup" size="1" class="f-name" tabindex="4">
+							<option selected><#PARAM name="StatusGroup"></option>
+							<option >Undergraduate</option>
+							<option>Graduate/Professional</option>
+							<option>Honors Program</option>
+							<option>Faculty</option>
+							<option>Staff</option>							
+							<option>Distance Graduate</option>
+							<option>Distance Undergraduate</option>
+							<option>Vet Preceptor</option>
+						</select><br />
+					</label></td></tr>
+					
+					<tr><td><label for="Department">
+						<span class="field">
+							<span class="<#ERROR name="ERRORDepartment">"><b>Department</b></span>
+						</span></td><td>
+						<select id="Department" name="Department" size="1" class="f-name" tabindex="4">
+							<option selected><#PARAM name="Department"></option>
+							<option>Accounting</option>
+        <option>Administration</option>
+        <option>Aerospace Studies</option>
+        <option>Agricultural & Food Systems</option>
+        <option>Agricultural Education</option>
+        <option>Agricultural Technology & Management</option>
+        <option>Agriculture, General</option>
+        <option>American Studies</option>
+        <option>Animal Sciences</option>
+        <option>Anthropology</option>
+        <option>Apparel Merchandising, Design & Textiles</option>
+        <option>Architecture</option>
+        <option>Asia Program</option>
+        <option>Astronomy</option>
+        <option>Bioengineering</option>
+        <option>Biological Systems Engineering</option>
+		<option>Biology</option>
+        <option>Business Administration</option>
+        <option>Business Law</option>
+        <option>Chemical Engineering</option>
+        <option>Chemistry</option>
+		<option>Chinese</option>
+        <option>Civil Engineering</option>
+        <option>Communication</option>
+			<option>Com: Journalism & Media Production</option>
+			<option>Com: Communication & Society</option>
+			<option>Com: Strategic Communication</option>
+		<option>Community & Rural Sociology</option>
+        <option>Comparative Ethnic Studies</option>
+        <option>Computer Science</option>
+		<option>Counseling Psychology</option>
+
+		<option>Construction Management</option>
+		<option>Criminal Justice</option>
+        <option>Crop Science</option>
+		<option>Design</option>
+		<option>Digital Technology & Culture</option>
+        <option>Economic Sciences</option>
+		<option>Education Abroad</option>
+        <option>Education Administration & Supervision</option>
+        <option>Educational Psychology</option>
+		<option>Educational Research</option>
+        <option>Electrical Engineering</option>
+		<option>Electron Microscopy</option>
+        <option>Engineering</option>
+        <option>English</option>
+        <option>Entomology</option>
+		<option>Entrepreneurship</option>
+        <option>Environmental Science & Regional Planning</option>
+		<option>Extension</option>
+		<option>Finance</option>
+		<option>Fine Arts</option>
+		<option>Food Science</option>
+        <option>Foreign Languages & Cultures</option>
+		<option>French</option>
+        <option>General Studies</option>
+        <option>Geology</option>
+		<option>German</option>
+		<option>Global Animal Health</option>
+        <option>History</option>
+        <option>Honors, University</option>
+        <option>Horticulture</option>
+        <option>Hospitality Business Management</option>
+        <option>Human Development</option>
+        <option>Humanities</option>
+        <option>Institute for Shock Physics</option>
+        <option>Institute of Biological Chemistry</option>
+		<option>Integrated Pest Management</option>
+		<option>Interdisciplinary</option>
+		<option>Interior Design</option>
+        <option>International Business</option>
+		<option>International Student Exchange</option>
+	<option>Irrigated Agriculture Research & Extension Center</option>
+		<option>Italian</option>
+		<option>Japanese</option>
+		<option>Kinesiology</option>
+		<option>Landscape Architecture</option>
+		<option>Liberal Arts</option>
+        <option>Library</option>
+	<option>Long Beach Research & Extension Unit</option>
+        <option>Management</option>
+		<option>Management & Operations</option>
+        <option>Management Information Systems</option>
+        <option>Marketing</option>
+        <option>Materials Science</option>
+		<option>Materials Science & Engineering</option>
+        <option>Mathematics</option>
+        <option>Mechanical Engineering</option>
+		<option>Medical Science</option>
+        <option>Microbiology</option>
+        <option>Military Science</option>
+        <option>Molecular Biosciences</option>
+			<option>MBios: Biochemistry</option>
+			<option>MBios: Genetics & Cell Biology</option>
+			<option>MBios: Microbiology</option>
+		<option>Molecular Plant Sciences</option>
+	<option>Mt. Vernon Research & Extension Unit</option>
+        <option>Music</option>
+		<option>National Student Exchange</option>
+        <option>Natural Resource Sciences</option>
+        <option>Naval Science</option>
+        <option>Neuroscience</option>
+		<option>Nursing</option>
+		<option>Pharmaceutical Sciences</option>
+		<option>Pharmacy</option>
+        <option>Pharmacy Sciences</option>
+        <option>Philosophy</option>
+        <option>Physical Education</option>
+        <option>Physics</option>
+        <option>Plant Pathology</option>
+        <option>Political Science</option>
+        <option>Psychology</option>
+	<option>Puyallup Research & Extension Center</option>
+        <option>Regents</option>
+		<option>Russian</option>
+		<option>Science</option>
+        <option>Sociology</option>
+        <option>Soil Science</option>
+		<option>Spanish</option>
+		<option>Special Education</option>
+		<option>Speech & Hearing Sciences</option>
+		<option>Sport Management</option>
+   		<option>Statistics</option>
+        <option>Teaching & Learning</option>
+    <option>Tree Fruit Research and Extension Center (TFREC)</option>
+        <option>University College</option>
+        <option>Veterinary Medicine</option>
+        <option>VCAPP</option>
+        <option>Veterinary Clinical Sciences</option>
+		<option>Veterinary Clinical Medicine & Surgery</option>
+        <option>Veterinary Microbiology</option>
+		<option>Veterinary Pathology</option>
+		<option>Veterinary Physiology & Pharmacology</option>
+		<option>Viticulture & Enology</option>
+	<option>Western Washington Research & Extension Center (WWREC)</option>
+        <option>Women's Studies</option>
+        <option>Other - Unlisted</option>>
+						</select><br />
+					</label></td></tr>
+					
+					<tr><td><label for="NVTGC">
+						<span class="field">
+						<span class="req">*</span>
+							<span class="<#ERROR name="ERRORNVTGC">"><b>Delivery Location</b></span>
+						</span>
+						<span class="note"><p> <font color="#000099"><b><font size="+2">*</font></font></b>If you are an Off-Campus student (DDP, WSU Online, etc.), please select Terrell Library from this list. If you are a student at Vancouver, Riverpoint, or WSU Tri-Cities, please close this form without saving and go to that campus' library web site to register for Interlibrary Loan.<br>
+						</span</td><td>
+						<select id="NVTGC" name="NVTGC" size="1" class="f-name" tabindex="4">
+							<option selected><#PARAM name="NVTGC"></option>
+							<option value ="PUL">Terrell Library</option>
+							<option value ="OWN">Owen Science Library</option>
+							<option value ="HSL">Animal Health Library</option>
+							<option value ="MUSC">Music Library</option>
+							<option value ="VR">Vancouver Delivery Only</option>
+							<option value ="TC">Tri-Cities Delivery Only</option>
+							<option value ="RP">Riverpoint Delivery Only</option>
+							<!--option value ="AGS">Fisher Agricultural Sciences Library</option>
+							<option value ="EDU">Brain Education Library</option>
+							<option value ="ARC">Architecture Library</option-->
+							<!--option value ="MSC">Manuscripts Archives and Special Collections</option-->
+							<!--option value ="VAN">WSU Vancouver</option>
+							<option value ="CAL">WSU Riverpoint</option>
+							<option value ="TRIC">WSU Tri-Cities</option-->
+						</select><br />
+					</label></td></tr>			
+					
+</table>
+										               
+                    <center>
+					<input type="submit" name="SubmitButton" value="Submit Information" class="f-submit" tabindex="60" />&nbsp;&nbsp;
+						<input type="reset" name="ResetButton" value="Clear Form" class="f-submit" tabindex="61" />&nbsp;&nbsp;
+						<input type="submit" name="SubmitButton" value="Cancel - Exit ILLiad System" class="f-submit" tabindex="62" />&nbsp;&nbsp;</center>
+
+				</fieldset>
+		</form>	
+            
+<#INCLUDE filename="include_footer.html">
+</div><br />
+</div>
+</div>
+<!--Beginning of the WSU Global Footer Zone. Refer to www.wsu.edu/identity/ for more information. -->
+<noscript>
+<div id="wsufooter">
+Copyright &copy;  Board of Regents, <a href="http://www.wsu.edu">Washington State University</a>
+</div>
+</noscript>
+<script language="javascript" type="text/javascript">
+	var strFooter;strFooter = getFooter();document.write(strFooter);
+</script>
+<!--End of the WSU Global Footer Zone. -->
+</body>
+</html>
+

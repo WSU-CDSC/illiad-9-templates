@@ -1,0 +1,101 @@
+<html>
+<head>
+<title>ILLiad Reports - Borrowing - Delivery Time Distribution</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+<!--[if lte IE 6]>
+<link rel="stylesheet" type="text/css" href="css/ie6_or_less.css" />
+<![endif]-->
+</head>
+<body id="type-b">
+<div id="wrap">
+	<div id="header"> 
+  		<span id="site-name">ILLiad Reports</span>
+  	</div>
+	
+  	<div id="content-wrap">
+		CGIFN=^VARIncludeFile:include_menu.html^
+		
+    	<div id="content">
+    	
+		<form action="illiadreports.dll" method="POST" name="DeliveryTimeDistributionIntro" class="f-wrap-request">
+			<fieldset>									
+				<input type="hidden" name="IlliadForm" value="DeliveryTimeDistributionIntro">
+				
+				<h3>Borrowing - Delivery Time Distribution</h3>
+				CGIFN=^VARStatusLine^
+				
+				<label for="Month">
+					<span class="field">
+						<b>Month</b>
+					</span>
+					CGIFN=^VARMonthList^<br />
+				</label>			
+
+				<label for="Year">
+					<span class="field">
+						<b>Year</b>
+					</span>
+					<input id="Year" name="Year" type="text" class="f-name" value="CGIFN=^VARYear^" maxLength="4"><br />
+				</label>
+
+				<label>
+					<span class="field">
+						<span title="Limit transactions included based on group affliation and processing site/delivery location."><b>Groups By Site</b></span>					
+					</span>
+					<div class="groups-table">						
+						CGIFN=^VARGroupsBySite^<br />
+					</div>
+				</label>
+						
+				<div class="f-submit-wrap">
+					<input type="submit" value="Generate Report" name="SubmitButton" class="f-submit">
+				</div>	
+				
+				<fieldset>
+				<h4>Advanced Report Options</h4>
+
+				<label for="GraphType">
+					<span class="field">
+						<b>Type of Graph</b>
+					</span>
+					<select id="GraphType" name="GraphType" class="f-name" size="1">
+						<option value="Line" selected="selected">Line Graph</option>
+						<option value="Bar">Bar Graph</option>
+					</select><br />
+				</label>
+				
+				<label for="Orientation">
+					<span class="field">
+						<b>3D Orientation</b>
+					</span>
+					<input id="Orientation" name="Orientation" type="checkbox" value="3D" checked><br />
+				</label>
+				
+				<label for="ShowLegend">
+					<span class="field">
+						<b>Show Legend</b>
+					</span>
+					<input id="ShowLegend" name="ShowLegend" type="checkbox" value="ON" checked><br />
+				</label>
+				
+				<label for="Width">
+					<span class="field">
+						<b>Graph Width</b>
+					</span>
+					<input id="Width" name="Width" type="text" size="20" value="800"><br />
+				</label>
+				
+				<label for="Height">
+					<span class="field">
+						<b>Graph Height</b>
+					</span>
+					<input id="Height" name="Height" type="text" size="20" value="300"><br />
+				</label>
+			</fieldset>     
+		</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>

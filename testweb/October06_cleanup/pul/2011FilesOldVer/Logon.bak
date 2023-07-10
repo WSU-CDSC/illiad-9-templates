@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta http-equiv="Expires"
+content="Tue, 04 Dec 1993 21:29:02 GMT">
+<meta http-equiv="Pragma" content="no-cache">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<title>Interlibrary Loan Logon Screen</title>
+
+<link rel="StyleSheet" href="http://www.dissertations.wsu.edu/Illiad/Pul/PulStyle.css" type="text/css">
+
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" link="#800000" vlink="#800000" background="http://www.wsulibs.wsu.edu/images/bevelback.gif">
+
+<!--INCLUDE HEADER FILE HERE--------Do Not Edit ---------------------->
+<script language="JavaScript" src="http://www.wsulibs.wsu.edu/Header/Header.js"><!--
+// end JavaScript. -->
+</script>
+<!--END INCLUDED HEADER FILE------------------------------------------>
+
+<form action="http://www.dissertations.wsu.edu/Illiad/Pul/illiad.dll" method="POST" name="Logon">
+<input type="hidden" name="IlliadForm" value="Logon">
+<input type="hidden" name="LogonPath" value="D:\website\wwwroot\illiad\pul\">
+<input type="hidden" name="NVTGC" value="PUL"><table
+    border="0" width="100%">
+        <tr>
+            <td colspan="3" width="100%" bgcolor="#000099"><font
+            color="#FFFFFF" size="5" face="Arial">ILLiad Logon Screen</font></td>
+        </tr>
+    </table>
+    <table border="0" width="100%" bgcolor="#C0C0C0">
+        <tr>
+            <td valign="top" width="10%"><font size="4"
+            face="Arial">Status:</font></td>
+            <td width="90%"><font face="Arial"><em class="status">Registered users, enter your ILLiad username and password below.<br>
+            Then press the </em><b>Logon to ILLiad</b><em class="status"> button to continue.</em></font></td>
+        </tr>
+    </table>
+
+
+    <table border="0" width="100%">
+        <tr>
+            <td colspan="3" align="center"><a href="firsttime.html"><font color="#cc0033" size="5">First Time Users Click Here</font></a><font color="#cc0033" size="5"><img src="images/Exclaim23B.gif" width="32" height="32"></font></td>
+         </tr>
+        <tr>
+            <td align="center" width="40%">&nbsp;</td>
+            <td width="40%">&nbsp;</td>
+            <td width="20%">&nbsp;</td>
+        </tr>
+        <tr>
+            <td align="right">Enter your ILLiad Username:</td>
+            <td><input type="text" size="20" name="Username"></td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td align="right">Enter your ILLiad Password:</td>
+            <td><input type="password" size="20" name="Password"></td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td align="right">Click Button to Logon:</td>
+            <td><input type="submit" name="SubmitButton" value="Logon to ILLiad"></td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center"><a href="http://www.dissertations.wsu.edu/illiad/pul/faq.html"><font
+            color="#cc0033" size="4">Frequently Asked Questions and Contact Information</font></a></td>
+        </tr>
+    </table>
+</form>
+<p class="notice" align="center">DISTANCE DEGREE STUDENTS and WSU PULLMAN AFFILIATES AWAY FROM CAMPUS:<br>Please use ILLiad for all your document delivery requests and for books that are not available through Griffin or Summit.</p>
+<p><font size="3"><em>&copy; 1996, 1998 <A HREF="http://www.vtip.org/">Virginia Tech Intellectual Properties, Inc.</A></em></font></p>
+<p><font size="3"><em>&copy; 1998, 1999, 2000 <A HREF="http://www.atlas-sys.com/">Atlas Systems, Inc.</A></em></font></p>
+
+<!--INCLUDE FOOTER FILE HERE--------Do Not Edit ---------------------->
+<script language="JavaScript" src="http://www.dissertations.wsu.edu/illiad/pul/Footer.js"><!--
+// end JavaScript. -->
+</script>
+<!--END INCLUDE FILE-------------------------------------------------->
+
+</body>
+</html>
+
+

@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>ILLiad Reports - Borrowing - Who We Borrow From</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+<!--[if lte IE 6]>
+<link rel="stylesheet" type="text/css" href="css/ie6_or_less.css" />
+<![endif]-->
+</head>
+<body id="type-b">
+<div id="wrap">
+	<div id="header"> 
+  		<span id="site-name">ILLiad Reports</span>		
+  	</div>
+	
+  	<div id="content-wrap">
+		CGIFN=^VARIncludeFile:include_menu.html^
+		
+    	<div id="content">    							
+			<form action="illiadreports.dll" method="POST" name="WhoWeBorrowFromIntro" class="f-wrap-request">				
+			<fieldset>					
+				<input type="hidden" name="IlliadForm" value="WhoWeBorrowFromIntro">
+				
+				<h3>Borrowing - Who We Borrow From</h3>
+				CGIFN=^VARStatusLine^
+				
+				<label for="BeginDate">
+					<span class="field">
+						<span title="The begin date for the report. This date is inclusive."><span title="The begin date for the report. This date is inclusive."><b>Begin Date</b></span></span>
+					</span>
+					<input id="BeginDate" name="BeginDate" type="text" class="f-name" value="CGIFN=^VARBeginDate^"><br />
+				</label>			
+
+				<label for="EndDate">
+					<span class="field">
+						<span title="The end date for the report. This date is not inclusive."><span title="The end date for the report. This date is not inclusive."><b>End Date</b></span></span>
+					</span>
+					<input id="EndDate" name="EndDate" type="text" class="f-name" value="CGIFN=^VAREndDate^"><br />
+				</label>
+				
+				<label for="NumberofRequests">
+					<span class="field">
+						<b>Number of Requests</b>
+					</span>
+					<input id="NumberofRequests" name="NumberofRequests" type="text" class="f-name" value="5"><br />
+				</label>
+
+				<label for="RequestType">
+					<span class="field">
+						<b>Request Type</b>
+					</span>
+					<select id="RequestType" name="RequestType" class="f-name" size="1">
+						<option value="Both">Both</option>
+                      	<option>Article</option>
+                      	<option>Loan</option>
+					</select><br />
+				</label>
+
+				<label>
+					<span class="field">
+						<span title="Limit transactions included based on group affliation and processing site/delivery location."><b>Groups By Site</b></span>					</span>
+					<div class="groups-table">						
+						CGIFN=^VARGroupsBySite^<br />
+					</div>
+				</label>
+									
+				<div class="f-submit-wrap">
+					<input type="submit" value="Generate Report" name="SubmitButton" class="f-submit">
+				</div>								
+            </fieldset>    
+		</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>

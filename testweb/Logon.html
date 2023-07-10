@@ -1,0 +1,535 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-svg lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]><html class="no-svg lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]><html class="no-svg lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8" />
+
+    <link rel="shortcut icon" href="https://repo.wsu.edu/spine/2/favicon.ico" />
+
+    <!-- Site specific stylesheets should be inserted after the Spine CSS above. -->
+    <!-- The primary WSU Spine stylesheet -->
+    <link href="https://repo.wsu.edu/spine/2/spine.min.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" type="text/css" href="css/cookieconsent.min.css" />
+    <link rel="apple-touch-icon" href="iphone-icon.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/illiad.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+    <!-- Current library versions can be found at https://developers.google.com/speed/libraries/ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <!-- <script src="https://repo.wsu.edu/spine/2/spine.min.js"></script> -->
+    <script src="js/spine.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="js/cookieconsent.min.js" data-cfasync="false"></script>
+    <script src="js/atlasCookieConsent.js"></script>
+    <script src="js/webAlerts.js"></script>
+    <!-- fixLinks.js adds external link symbols to match the look of WSU Libraries spine -->
+    <script src="js/fixLinks.js"></script>
+
+    <!-- Ensure the Spine is displayed fully when no-JS -->
+    <noscript>
+      <style>
+        #spine .spine-sitenav ul ul li {
+          display: block !important;
+        }
+      </style>
+    </noscript>
+</head>
+
+<body>
+    <a href="#wsu-main-content" class="screen-reader-shortcut">Skip to main content</a
+    >
+    <a href="#spine-navigation" class="screen-reader-shortcut"
+      >Skip to navigation</a
+    >
+
+    <div id="jacket" class="style-skeletal colors-default spacing-tight">
+      <div id="binder" class="fluid folio max-1188 broken">
+        <!-- Primary site content goes within this main element. -->
+
+        <main id="wsuwp-main" class="wsu-main-content spine-blank-template">
+          <!-- <div class="content">
+            <header class="head">
+              <div>
+                <a
+                  href="#content"
+                  accesskey="S"
+                  onclick="$('#content').focus();"
+                  class="offscreen"
+                  >Skip to Main Content</a
+                >
+              </div>
+              <h1>ILLiad WSU Menu !!</h1>
+            </header> -->
+          <!-- red header -->
+          <header class="main-header">
+            <div class="header-group hgroup guttered padded-bottom short">
+              <sup
+                class="sup-header"
+                data-section=""
+                data-pagetitle="About"
+                data-posttitle="About"
+                data-default='<a href="https://libraries.wsu.edu/" rel="home">WSU Libraries</a>' data-alternate="" >
+    <span class="sup-header-default"><a href="https://libraries.wsu.edu/" rel="home"
+                    >WSU Libraries</a
+                  ></span
+                ></sup
+              >
+              <sub
+                class="sub-header"
+                data-sitename="WSU Libraries"
+                data-pagetitle="About"
+                data-posttitle="About"
+                data-default="The Libraries"
+                data-alternate=""
+                ><span class="sub-header-default">The Libraries</span></sub>
+    </div>
+    </header>
+    <!-- red header end -->
+
+    <div class="alerts-bar">
+        <div class="container" id="webAlerts"></div>
+    </div>
+
+    <div class="container">
+        <form action="illiad.dll" method="post" name="Logon">
+            <input type="hidden" name="ILLiadForm" value="Logon" />
+
+            <div class="logon-directions">
+                <span class="new-line">
+                  Enter your user information below.
+                </span>
+                <span class="new-line">
+                  Then press the Logon to ILLiad button to continue.
+                </span>
+            </div>
+
+            <div class="logon-field form-group col-md-8">
+                <label for="username"> Username </label>
+                <input type="text" class="form-control" name="username" id="username" value="" />
+            </div>
+
+            <div class="logon-field form-group col-md-8">
+                <label for="password"> Password </label>
+                <input type="password" class="form-control" name="password" id="password" autocomplete="off" />
+            </div>
+
+            <button class="btn btn-primary btn-md" type="submit" name="SubmitButton" value="Logon to ILLiad">
+                Logon to ILLiad
+              </button>
+        </form>
+
+        <div class="forgot-password-link">
+            <a href="illiad.dll?Action=10&Form=84">
+                <span aria-hidden="true" class="fas fa-question-circle"></span> Forgot Password?
+            </a>
+        </div>
+        <!-- <div class="first-time-link">
+            <a href="illiad.dll?Action=10&Form=79">
+                <span aria-hidden="true" class="fas fa-user-plus"></span> First Time Users
+            </a>
+        </div> -->
+
+        <footer class="foot">
+            <span class="new-line">Powered by
+                <a href="illiad.dll?Action=10&Form=1">ILLiad</a></span
+              >
+              <span class="new-line">
+                &copy; 2020
+                <a href="http://www.atlas-sys.com"> Atlas Systems, Inc.</a>
+                All Rights Reserved.
+              </span>
+            <span class="new-line">
+                <a href="illiad.dll?Action=10&Form=3">Site Map </a>
+              </span>
+        </footer>
+    </div>
+    </main>
+    <!-- End #wsu-main-content -->
+
+    <div id="spine" class="spine-column darker search-open shelved">
+        <div id="glue" class="spine-glue">
+            <header class="spine-header">
+                <a href="https://wsu.edu/" id="wsu-signature">Washington State University</a
+              >
+            </header>
+
+            <section id="wsu-actions" class="spine-actions">
+              <ul id="wsu-actions-tabs" class="spine-actions-tabs clearfix">
+                <li id="wsu-search-tab" class="spine-search-tab closed">
+                  <button>Search</button>
+                </li>
+                <li id="wsu-contact-tab" class="spine-contact-tab closed">
+                  <button>Contact</button>
+                </li>
+                <li id="wsu-share-tab" class="spine-share-tab closed">
+                  <button>Share</button>
+                </li>
+              </ul>
+            </section>
+            <!-- End #wsu-actions .spine-actions -->
+
+            <section id="spine-navigation" class="spine-navigation">
+              <!-- The main navigation for the site. -->
+
+              <nav class="spine-sitenav">
+                <ul>
+                  <li>
+                    <a href="https://libraries.wsu.edu/">Libraries-Home</a>
+                </li>
+                <!-- About submenu -->
+                <li>
+                    <a href="https://libraries.wsu.edu/about/">About</a>
+                    <ul>
+                        <li>
+                            <a href="https://libraries.wsu.edu/contact/">Contact Us</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://libraries.wsu.edu/hours">Hours</a>
+                        </li>
+                        <li>
+                            <a href="https://libraries.wsu.edu/spaces/">Locations and Spaces</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://libraries.wsu.edu/about/departments"
+                          >Departments</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://libraries.wsu.edu/masc"
+                          >Special Collections</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://libraries.wsu.edu/directory/"
+                          >Library Directory</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://libraries.wsu.edu/library-map/"
+                          >Library Map</a
+                        >
+                      </li>
+                      <li>
+                        <a href="http://libraries.wsu.edu/friends"
+                          >Friends of the Library</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://libraries.wsu.edu/jobs/">Jobs</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- Services submenu -->
+                <li>
+                    <a href="https://libraries.wsu.edu/services/">Services</a>
+                    <ul>
+                        <li>
+                            <a href="https://libraries.wsu.edu/course-reserves/">Course Reserves</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://libraries.wsu.edu/services/interlibrary-loan/"
+                          >Interlibrary Loans</a
+                        >
+                      </li>
+                      <li>
+                        <!-- external links are given a unique ID so they can be assigned the arrow symbol -->
+                        <a
+                          id="menu-item-291"
+                          href="http://research.libraries.wsu.edu/"
+                          >Research Exchange</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://libraries.wsu.edu/masc"
+                          >Special Collections</a
+                        >
+                      </li>
+                      <li>
+                        <!-- external links are given a unique ID so they can be assigned the arrow symbol -->
+
+                        <a
+                          id="menu-item-293"
+                          href="https://libguides.libraries.wsu.edu/bookaroom"
+                          >Book a Study Space</a
+                        >
+                      </li>
+                      <li>
+                        <!-- external links are given a unique ID so they can be assigned the arrow symbol -->
+                        <a
+                          id="menu-item-3758"
+                          href="https://calendar.libraries.wsu.edu/appointments"
+                          >Book a Librarian</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://libraries.wsu.edu/purchase-request/"
+                          >Purchase Request</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <!-- Info For submenu -->
+                  <li>
+                    <a href="https://libraries.wsu.edu/information-for/"
+                      >Info For</a
+                    >
+                    <ul>
+                      <li>
+                        <a href="https://libraries.wsu.edu/info-for/new-users/"
+                          >New Users</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://libraries.wsu.edu/info-for/students/"
+                          >Students</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://libraries.wsu.edu/info-for/global-campus/"
+                          >Global Campus</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://libraries.wsu.edu/info-for/instructors/"
+                          >Instructors</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://libraries.wsu.edu/info-for/faculty-staff/"
+                          >Faculty &#038; Staff</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://libraries.wsu.edu/info-for/community"
+                          >Community Members</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <!-- Help submenu -->
+                  <li>
+                    <a href="https://libraries.wsu.edu/help/">Help</a>
+                            <ul>
+                                <li>
+                                    <a href="https://libraries.wsu.edu/ask/">Ask Us</a>
+                                </li>
+                                <li>
+                                    <a href="https://libraries.wsu.edu/how-do-i/">How Do I…?</a
+                        >
+                      </li>
+                      <li>
+                        <!-- external links are given a unique ID so they can be assigned the arrow symbol -->
+                        <a
+                          id="menu-item-285"
+                          href="http://libguides.libraries.wsu.edu/"
+                          >Subject Guides</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://libraries.wsu.edu/about/subject-specialists"
+                          >Subject Librarians</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://libraries.wsu.edu/online-access-issues/"
+                          >Online Access Issues</a
+                        >
+                      </li>
+                      <li>
+                        <!-- external links are given a unique ID so they can be assigned the arrow symbol -->
+                        <a
+                          id="menu-item-3161"
+                          href="http://libanswers.libraries.wsu.edu/search/"
+                          >FAQs</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://libraries.wsu.edu/quickguides"
+                          >Citation Help</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <!-- My accounts submenu -->
+                  <li>
+                    <a href="https://libraries.wsu.edu/my-accounts/"
+                      >My Accounts</a
+                    >
+                    <ul>
+                      <li>
+                        <!-- external links are given a unique ID so they can be assigned the arrow symbol -->
+                        <a
+                          id="menu-item-281"
+                          href="https://searchit.libraries.wsu.edu/primo-explore/account?vid=WSU"
+                          >Search It</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#">Interlibrary Loans</a>
+                                    <ul>
+                                        <li>
+                                            <!-- external links are given a unique ID so they can be assigned the arrow symbol -->
+                                            <a id="menu-item-282" href="https://wsu.illiad.oclc.org/illiad/PUL/">Pullman ILL</a
+                            >
+                          </li>
+                          <li>
+                            <!-- external links are given a unique ID so they can be assigned the arrow symbol -->
+                            <a
+                              id="menu-item-283"
+                              href="https://wsu.illiad.oclc.org/illiad/CAL/logon.html"
+                              >Spokane &#038; Nursing ILL</a
+                            >
+                          </li>
+                          <li>
+                            <!-- external links are given a unique ID so they can be assigned the arrow symbol -->
+                            <a
+                              id="menu-item-284"
+                              href="https://wsu.illiad.oclc.org/illiad/VAN/logon.html"
+                              >Vancouver ILL</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+
+              <!-- Offsite navigation for the site. -->
+              <nav class="spine-offsitenav">
+                <ul>
+                  <li>
+                    <!-- external links are given a unique ID so they can be assigned the arrow symbol -->
+                    <a id="menu-item-322" href="https://spokane.wsu.edu/library"
+                      >WSU Spokane</a
+                    >
+                  </li>
+                  <li>
+                    <!-- external links are given a unique ID so they can be assigned the arrow symbol -->
+                    <a
+                      id="menu-item-323"
+                      href="http://tricities.wsu.edu/library"
+                      >WSU Tri-Cities</a
+                    >
+                  </li>
+                  <li>
+                    <!-- external links are given a unique ID so they can be assigned the arrow symbol -->
+                    <a
+                      id="menu-item-324"
+                      href="http://library.vancouver.wsu.edu/"
+                      >WSU Vancouver</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </section>
+            <!-- End #spine-navigation .spine-navigation -->
+
+            <footer class="spine-footer">
+              <nav id="wsu-social-channels" class="spine-social-channels">
+                <!-- the social media icons were a bit big so I resized them -->
+                <ul style="font-size: 12px">
+                  <li class="facebook-channel">
+                    <a href="https://facebook.com/wsupullman">Facebook</a>
+                                        </li>
+                                        <li class="twitter-channel">
+                                            <a href="https://twitter.com/wsupullman">Twitter</a>
+                                        </li>
+                                        <li class="youtube-channel">
+                                            <a href="https://www.youtube.com/washingtonstateuniv">YouTube</a
+                    >
+                  </li>
+                  <li class="instagram-channel">
+                    <a href="https://instagram.com/wsulibrariespullman/"
+                      >Instagram</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <nav id="wsu-global-links" class="spine-global-links">
+                <ul>
+                  <li class="mywsu-link">
+                    <a href="https://my.wsu.edu/" style="font-size: 9px"
+                      >myWSU</a
+                    >
+                  </li>
+                  <li class="access-link">
+                    <a href="https://access.wsu.edu/" style="font-size: 9px"
+                      >Access</a
+                    >
+                  </li>
+                  <li class="policies-link">
+                    <a href="https://policies.wsu.edu/" style="font-size: 9px"
+                      >Policies</a
+                    >
+                  </li>
+                  <li class="copyright-link">
+                    <a href="https://copyright.wsu.edu" style="font-size: 9px"
+                      >&copy;</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </footer>
+            <!-- End .spine-footer -->
+          </div>
+          <!-- End #glue -->
+        </div>
+        <!-- End #spine -->
+      </div>
+      <!-- End #binder -->
+    </div>
+    <!-- End #jacket -->
+
+    <div
+      id="contact-details"
+      itemscope
+      itemtype="http://schema.org/Organization"
+    >
+      <span itemprop="department" content="Libraries"></span>
+      <span itemprop="name" content="Washington State University"></span>
+      <div
+        itemprop="address"
+        itemscope
+        itemtype="http://schema.org/PostalAddress"
+      >
+        <span itemprop="location" content="Your location"></span>
+        <span itemprop="streetAddress" content="PO Box 645610"></span>
+        <span itemprop="addressLocality" content="Pullman"></span>
+        <span itemprop="addressRegion" content="WA"></span>
+        <span itemprop="postalCode" content="99164-5610"></span>
+      </div>
+      <span itemprop="telephone" content="509-335-9671"></span>
+      <span
+        itemprop="contactPoint"
+        content="https://libraries.wsu.edu/contact"
+      ></span>
+    </div>
+  </body>
+</html>

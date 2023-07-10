@@ -1,0 +1,113 @@
+<html>
+<head>
+<title>ILLiad Reports - Document Delivery - Turnaround Time</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+<!--[if lte IE 6]>
+<link rel="stylesheet" type="text/css" href="css/ie6_or_less.css" />
+<![endif]-->
+</head>
+<body id="type-b">
+<div id="wrap">
+	<div id="header"> 
+  		<span id="site-name">ILLiad Reports</span>
+  	</div>
+	
+  	<div id="content-wrap">
+		CGIFN=^VARIncludeFile:include_menu.html^
+		
+    	<div id="content">
+    	
+		<form action="illiadreports.dll" method="POST" name="DocDelTurnaroundTimeIntro" class="f-wrap-request">
+			<fieldset>									
+				<input type="hidden" name="IlliadForm" value="DocDelTurnaroundTimeIntro">
+				
+				<h3>Doc Del - Turnaround Time</h3>
+				CGIFN=^VARStatusLine^
+				
+				<label for="BeginDate">
+					<span class="field">
+						<span title="The begin date for the report. This date is inclusive."><span title="The begin date for the report. This date is inclusive."><b>Begin Date</b></span></span>
+					</span>
+					<input id="BeginDate" name="BeginDate" type="text" class="f-name" value="CGIFN=^VARBeginDate^"><br />
+				</label>			
+
+				<label for="EndDate">
+					<span class="field">
+						<span title="The end date for the report. This date is not inclusive."><span title="The end date for the report. This date is not inclusive."><b>End Date</b></span></span>
+					</span>
+					<input id="EndDate" name="EndDate" type="text" class="f-name" value="CGIFN=^VAREndDate^"><br />
+				</label>
+
+				<label>
+					<span class="field">
+						<span title="Limit transactions included based on group affliation and processing site/delivery location."><b>Groups By Site</b></span>					</span>
+					<div class="groups-table">						
+						CGIFN=^VARGroupsBySite^<br />
+					</div>
+				</label>
+
+				<div class="f-submit-wrap">
+					<input type="submit" value="Generate Report" name="SubmitButton" class="f-submit">
+				</div>									
+            </fieldset>      
+			
+			<fieldset>
+				<h4>Advanced Report Options</h4>
+				
+				<label for="ShowArticleDetails">
+					<span class="field">
+						<b>Show Detailed Records for Articles</b>
+					</span>
+					<input id="ShowArticleDetails" name="ShowArticleDetails" type="checkbox" value="ON"><br />
+				</label>
+				
+              	<label for="ShowLoanDetails">
+					<span class="field">
+						<b>Show Detailed Records for Loans</b>
+					</span>
+					<input id="ShowLoanDetails" name="ShowLoanDetails" type="checkbox" value="ON" ><br />
+				</label>	
+				
+				<i>Showing detailed records for articles or loans will display every transaction number, along with the specific
+              	times for each step of the process for that transaction, and the overall transaction turnaround time. Turning these on will result
+              	in a large report.</i><br /><br />
+			</fieldset>
+			
+			<fieldset>
+				<h4>Pie Chart Options</h4>
+				
+				<label for="Orientation">
+					<span class="field">
+						<b>3D Orientation</b>
+					</span>
+					<input id="Orientation" name="Orientation" type="checkbox" value="ON" checked><br />
+				</label>
+				
+				<label for="ShowLegend">
+					<span class="field">
+						<b>Show Legend</b>
+					</span>
+					<input id="ShowLegend" name="ShowLegend" type="checkbox" value="ON" checked><br />
+				</label>
+				
+				<label for="Width">
+					<span class="field">
+						<b>Graph Width</b>
+					</span>
+					<input id="Width" name="Width" type="text" size="20" value="500"><br />
+				</label>
+				
+				<label for="Height">
+					<span class="field">
+						<b>Graph Height</b>
+					</span>
+					<input id="Height" name="Height" type="text" size="20" value="300"><br />
+				</label>
+			</fieldset>
+		</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>
